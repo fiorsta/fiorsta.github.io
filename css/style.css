@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1366px;
+    min-width: 600px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 800px;
+    background: url(../img/slider.png);
+}
+
+.header .logo {
+    margin-top: 63px;
+    margin-left: 98px;
+}
+
+.header .menu {
+    float: right;
+    list-style-type: none;
+    margin-right: 201px;
+    margin-top: 50px;
+}
+
+.header .menu li {
+    float: left;
+    height: 50px;
+}
+
+.header .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 1.4px;
+    padding: 0 10px;
+}
+
+.header .menu li a:hover {
+    color: #212121;
+    font-weight: 400;
+    border-bottom: 3px solid #212121;
+}
+
+.text {
+    width: 458px;
+    margin-top: 270px;
+    margin-left: 98px;
+    display: block;
+}
+
+.text .trending {
+    color: #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 1.8px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.text .fishnet {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    padding: 0;
+}
+
+.text p {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    padding-bottom: 32px;
+}
+
+.orderUs {
+    display: block;
+    text-decoration: none;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #6c6c6c;
+    letter-spacing: 3.6px;
+    margin-top: ;
+}
+
+.orderUs .a {
+    display: inline-block;
+    margin-left: 31px;
+}
+
+.orderUs:hover {
+    color: #212121;
+    background: #ffffff url('../img/arrow.png') no-repeat 173px 16px;
+}
+
+.orderUs:active {
+    box-shadow: none;
+}
+
+.navi {
+    float: right;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    margin-top: 141px;
+    margin-right: 623px;
+    list-style-type: none;
+}
+
+.navi .navi1,
+.navi2,
+.navi3 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../img/noactive.png) no-repeat center center;
+}
+
+.navi .navi1:hover {
+    border-radius: 20px;
+    background: #212121;
+    cursor: pointer;
+}
+
+.navi .navi2:hover {
+    border-radius: 20px;
+    background: #212121;
+    cursor: pointer;
+}
+
+.navi .navi3:hover {
+    border-radius: 20px;
+    background: #212121;
+    cursor: pointer;
+}
+/**/
+.tabControl {
+    list-style-type: none;
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 98px;
+}
+
+.tabControl li {
+    float: left;
+    height: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.tabControl li a {
+    display: block;
+    height: 48px;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    padding: 0 20px 0 9px;
+}
+
+.tabControl li a:hover {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.exploreAll a {
+    display: inline-block;
+    width: 190px;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-right: 98px;
+    float: right;
+}
+
+.exploreAll a:hover {
+    color: #212121;
+    background: url(../img/arrow.png) no-repeat 178px center;
+}
+
+.productLine {
+    clear: both;
+    margin-left: 98px;
+    margin-bottom: 120px;
+}
+
+.product {
+    display: inline-block;
+    position: relative;
+    height: 270px;
+    width: 270px;
+    margin-right: 30px;
+}
+
+.productInfo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid #9c9c9c;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+}
+
+.productInfo .pump {
+    display: block;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 24px;
+    background: #ffffff url('../img/arrow2.png') no-repeat center center;
+    opacity: 100%;
+    margin: 62px auto 19px auto;
+}
+
+.productInfo .pump:active {
+    box-shadow: none;
+}
+
+.productInfo h4 {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    margin-bottom: 5px;
+}
+
+.productInfo p {
+    width: 206px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21.91px;
+    margin-left: 32px;
+    letter-spacing: -0.3px;
+}
+
+.product:hover .productInfo {
+    display: block;
+}
+
+.exclusive {
+    display: block;
+    float: left;
+    width: 683px;
+    height: 683px;
+    margin-bottom: 120px;
+}
+
+.textEx {
+    float: left;
+    width: 374px;
+    margin-top: 228px;
+    margin-left: 50px;
+}
+
+.textEx .ex {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #1e88e5;
+    letter-spacing: 1.8px;
+}
+
+.textEx .fishCh {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.textEx .textE {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.04px;
+    letter-spacing: -0.2px;
+    padding-bottom: 34px;
+}
+
+/**/
+.trendH {
+    clear: both;
+}
+
+.trendProduct {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 98px;
+    float: left;
+}
+
+.productBig {
+    clear: both;
+    position: relative;
+    margin-left: 98px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.productBig img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/**/
+
+.slider {
+    height: 800px;
+    background: url(../img/slider.jpg);
+    margin-bottom: 120px;
+}
+
+.exclusiveMini {
+    width: 570px;
+    height: 570px;
+    background-image: url(../img/product-1-lg.png);
+    margin-left: 98px;
+    float: left;
+}
+
+.exclusiveMini_block {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.mobileApp {
+    clear: both;
+    height: 516px;
+    margin-top: 90px;
+    background-image: url(../img/back-img.jpg);
+}
+
+.mobileApp .textMobile {
+    width: 415px;
+    margin-top: 125px;
+    margin-left: 99px;
+    display: block;
+    float: left;
+}
+
+.mobileApp .textMobile .mobApp {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #6c6c6c;
+    letter-spacing: 1.8px;
+    padding: 0;
+}
+
+.mobileApp .textMobile .FFF {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -4.5px;
+    padding: 0;
+}
+
+.mobileApp .textMobile p {
+    color: #6c6c6c;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    padding-bottom: 33px;
+}
+
+.mobileApp .textMobile .store {
+    margin-right: 10px;
+}
+
+.clr {
+    clear: both;
+    height: 384px;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 384px;
+    width: 1366px;
+    background-color: #f7f7f7;
+    padding: 120px 98px 0 98px;
+    margin: -384px auto 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer .contact {
+    width: 221px;
+    display: inline-block;
+    float: left;
+    margin-right: 78px;
+}
+
+.footer .footerH {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    padding-bottom: 24px;
+}
+
+.footer .footerText {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+}
+
+.footer .usefulInf {
+    width: 441px;
+    display: inline-block;
+    float: left;
+    margin-right: 70px;
+}
+
+.footer .footerCol {
+    list-style-type: none;
+    float: left;
+    margin-right: 103px;
+}
+
+.footer .footerCol a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.footer .letsStay {
+    display: inline-block;
+    width: 360px;
+}
+
+.email {
+    margin-top: 25px;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #d9dee1;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    height: 42px;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="image"] {
+    width: 21px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+input::placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+input[placeholder]::-moz-placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* Firefox 19+ */
+input[placeholder]:-moz-placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* Firefox 18- */
+input[placeholder]:-ms-input-placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/*Microsoft Edge*/
+input[placeholder]::-ms-input-placeholder {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.footer .copyR {
+    clear: both;
+    float: left;
+    margin-top: 50px;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.footer .socialIco {
+    position: absolute;
+    height: 28px;
+    right: 618px;
+    bottom: 30px;
+}
+
+.footer .social {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+.footer .termsCookies {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.footer .termsCookies1 {
+    float: right;
+    margin-top: 50px;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+
+.clearFix {
+    clear: both;
+}
+
+/*Contact*/
+
+.contactUs {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    letter-spacing: -4px;
+    margin-left: 98px;
+    margin-top: 171px;
+    padding: 0;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    padding: 71px 98px 92px 98px;
+}
+
+.location {
+    width: 370px;
+    height: 370px;
+    text-align: center;
+    border: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: 48px 50px 63px 49px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.city {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.phoneEmailAddress {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.phoneEmailAddress .number {
+    display: block;
+    color: #212121;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.phoneEmailAddress .emailAdd {
+    display: block;
+    color: #212121;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.phoneEmailAddress .address {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+}
+
+/*Products*/
+.tabControlProducts {
+    list-style-type: none;
+    margin-top: 71px;
+    margin-left: 98px;
+}
+
+.tabControlProducts li {
+    float: left;
+    height: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.tabControlProducts li a {
+    display: block;
+    height: 38px;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding: 0 20px 0 9px;
+}
+
+.tabControlProducts li a:hover {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.productSlide {
+    clear: both;
+    margin-left: 98px;
+    margin-top: ;
+}
+
+.productSlide img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.load {
+    text-align: center;
+}
+
+.load .hide {
+    display: none;
+}
+
+.load .hide + label {
+    cursor: pointer;
+}
+
+.load .hide + label ~ .products {
+    display: none;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.load .hide:checked + label + .products {
+    display: block;
+}
+
+
+.load .productSlide img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/*ProductCard*/
+.menuSub {
+    height: 71px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.menuSub .tabControlProductsCard {
+    list-style-type: none;
+    padding-left: 350px;
+}
+
+.menuSub .tabControlProductsCard li {
+    float: left;
+    height: 70px;
+}
+
+.menuSub .tabControlProductsCard li a {
+    display: block;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 68px;
+    padding: 0 20px 0 10px;
+    letter-spacing: 1.8px;
+}
+
+.menuSub .tabControlProductsCard li a:hover {
+    color: #212121;
+}
+
+.productAction {
+    float: left;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 98px;
+}
+
+.productCard {
+    width: 570px;
+    height: 570px;
+    background-image: url(../img/chairRed.png);
+}
+
+.productCardMini {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.productCardMini:hover {
+    opacity: 0.5;
+}
+
+.textCard {
+    float: right;
+    text-align: center;
+    margin-top: 118px;
+    margin-right: 130px;
+    width: 520px;
+    padding-left: 40px;
+}
+
+.textCard .fishH {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.textCard .hotCard {
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48.02px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+}
+
+.textCard .price {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48.02px;
+    margin-bottom: 20px;
+}
+
+.textCard .price .priceDol {
+    font-size: 48px;
+}
+
+.textCard .price .priceCh {
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.textCard .orderUsCard {
+    display: block;
+    text-decoration: none;
+    width: 510px;
+    height: 71px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 36px;
+    background-color: #f44336;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 70.01px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4.4px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.orderUsCard:hover {
+    background: #f44336 url('../img/arrowCard.png') no-repeat 345px 21px;
+}
+
+.orderUsCard:active {
+    box-shadow: none;
+}
+
+.textDesc {
+    overflow: hidden;
+    width: 500px;
+    padding-left: 61px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
